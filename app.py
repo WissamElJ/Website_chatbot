@@ -1,7 +1,7 @@
 import streamlit as st
 from my import my_main
 
-# Check if "messages" key exists in the session state
+# Check if "messages" key exists in the session states
 if "messages" not in st.session_state.keys():
     st.session_state["messages"] = [{
         "role": "assistant", "content": "Hello, I am your assistant, how can I help you?"
